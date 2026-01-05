@@ -3,38 +3,38 @@ import { Crown, Sword, Heart, Sparkles, Building2, Flame } from "lucide-react";
 const categories = [
   {
     icon: Crown,
-    title: "宫斗剧",
-    description: "权谋争斗",
+    title: "Drama Istana",
+    description: "Intrik kerajaan",
     color: "from-crimson to-crimson-dark",
   },
   {
     icon: Sword,
-    title: "武侠剧",
-    description: "江湖风云",
+    title: "Wuxia",
+    description: "Dunia persilatan",
     color: "from-gold to-gold-light",
   },
   {
     icon: Sparkles,
-    title: "仙侠剧",
-    description: "修仙问道",
+    title: "Fantasi",
+    description: "Dunia mistis",
     color: "from-blue-500 to-cyan-400",
   },
   {
     icon: Heart,
-    title: "爱情剧",
-    description: "浪漫甜蜜",
+    title: "Romantis",
+    description: "Kisah cinta",
     color: "from-pink-500 to-rose-400",
   },
   {
     icon: Building2,
-    title: "都市剧",
-    description: "现代生活",
+    title: "Modern",
+    description: "Kehidupan kota",
     color: "from-emerald-500 to-teal-400",
   },
   {
     icon: Flame,
-    title: "动作剧",
-    description: "热血激情",
+    title: "Aksi",
+    description: "Penuh adrenalin",
     color: "from-orange-500 to-amber-400",
   },
 ];
@@ -46,10 +46,10 @@ const Categories = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            探索<span className="text-gradient-gold">类型</span>
+            Jelajahi <span className="text-gradient-gold">Kategori</span>
           </h2>
           <p className="text-foreground/60 max-w-xl mx-auto">
-            从经典古装到现代都市，找到你最爱的剧集类型
+            Dari drama klasik hingga modern, temukan genre favoritmu
           </p>
         </div>
         

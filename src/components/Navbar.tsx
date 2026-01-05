@@ -15,26 +15,26 @@ const Navbar = () => {
               <span className="text-primary-foreground font-display font-bold text-xl">華</span>
             </div>
             <span className="text-xl font-display font-semibold text-gradient-gold">
-              华剧天地
+              Drama China
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-              首页
+              Beranda
             </a>
             <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-              古装剧
+              Kostum Kuno
             </a>
             <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-              现代剧
+              Modern
             </a>
             <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-              仙侠剧
+              Fantasi
             </a>
             <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-              动作剧
+              Aksi
             </a>
           </div>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
               <Menu className="w-5 h-5" />
             </Button>
             <Button variant="hero" size="sm" className="hidden md:flex">
-              VIP会员
+              Member VIP
             </Button>
           </div>
         </div>
@@ -65,22 +65,22 @@ const Navbar = () => {
           <div className="md:hidden mt-4 pb-4 border-t border-border/50 pt-4 animate-fade-in">
             <div className="flex flex-col gap-4">
               <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-                首页
+                Beranda
               </a>
               <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-                古装剧
+                Kostum Kuno
               </a>
               <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-                现代剧
+                Modern
               </a>
               <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-                仙侠剧
+                Fantasi
               </a>
               <a href="#" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-                动作剧
+                Aksi
               </a>
               <Button variant="hero" size="sm" className="w-full mt-2">
-                VIP会员
+                Member VIP
               </Button>
             </div>
           </div>
