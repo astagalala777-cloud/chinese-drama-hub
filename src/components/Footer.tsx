@@ -10,42 +10,42 @@ const Footer = () => {
                 <span className="text-primary-foreground font-display font-bold text-xl">華</span>
               </div>
               <span className="text-xl font-display font-semibold text-gradient-gold">
-                华剧天地
+                Drama China
               </span>
             </div>
             <p className="text-foreground/50 text-sm leading-relaxed">
-              汇聚最精彩的华语电视剧，为您带来极致的观影体验。
+              Kumpulan drama China terbaik untuk pengalaman menonton yang luar biasa.
             </p>
           </div>
           
           {/* Links */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">剧集类型</h4>
+            <h4 className="font-semibold text-foreground mb-4">Kategori Drama</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">古装剧</a></li>
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">现代剧</a></li>
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">仙侠剧</a></li>
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">武侠剧</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">Kostum Kuno</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">Modern</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">Fantasi</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">Wuxia</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold text-foreground mb-4">帮助中心</h4>
+            <h4 className="font-semibold text-foreground mb-4">Bantuan</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">常见问题</a></li>
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">联系客服</a></li>
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">用户协议</a></li>
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">隐私政策</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">FAQ</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">Hubungi Kami</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">Syarat & Ketentuan</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">Kebijakan Privasi</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold text-foreground mb-4">关注我们</h4>
+            <h4 className="font-semibold text-foreground mb-4">Ikuti Kami</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">微信公众号</a></li>
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">微博</a></li>
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">抖音</a></li>
-              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">小红书</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">Instagram</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">Twitter</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">TikTok</a></li>
+              <li><a href="#" className="text-foreground/50 hover:text-gold transition-colors text-sm">YouTube</a></li>
             </ul>
           </div>
         </div>
@@ -53,12 +53,12 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-border/30 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-foreground/40 text-sm">
-            © 2024 华剧天地. 保留所有权利.
+            © 2024 Drama China. Hak cipta dilindungi.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-foreground/40 hover:text-gold transition-colors text-sm">用户协议</a>
-            <a href="#" className="text-foreground/40 hover:text-gold transition-colors text-sm">隐私政策</a>
-            <a href="#" className="text-foreground/40 hover:text-gold transition-colors text-sm">Cookie设置</a>
+            <a href="#" className="text-foreground/40 hover:text-gold transition-colors text-sm">Syarat & Ketentuan</a>
+            <a href="#" className="text-foreground/40 hover:text-gold transition-colors text-sm">Kebijakan Privasi</a>
+            <a href="#" className="text-foreground/40 hover:text-gold transition-colors text-sm">Pengaturan Cookie</a>
           </div>
         </div>
       </div>

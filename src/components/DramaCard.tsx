@@ -52,7 +52,7 @@ const DramaCard = ({ image, title, year, rating, genre, episodes }: DramaCardPro
         <div className="flex items-center gap-2 text-xs text-foreground/60">
           <span>{year}</span>
           <span>•</span>
-          <span>{episodes}集</span>
+          <span>{episodes} Episode</span>
         </div>
       </div>
     </div>

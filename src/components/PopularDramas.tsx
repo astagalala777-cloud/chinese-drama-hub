@@ -10,50 +10,50 @@ import drama6 from "@/assets/drama-6.jpg";
 const dramas = [
   {
     image: drama1,
-    title: "梦华录",
+    title: "A Dream of Splendor",
     year: "2022",
     rating: 9.2,
-    genre: "古装",
+    genre: "Kostum Kuno",
     episodes: 40,
   },
   {
     image: drama2,
-    title: "苍兰诀",
+    title: "Love Between Fairy and Devil",
     year: "2022",
     rating: 9.5,
-    genre: "仙侠",
+    genre: "Fantasi",
     episodes: 36,
   },
   {
     image: drama3,
-    title: "去有风的地方",
+    title: "Meet Yourself",
     year: "2023",
     rating: 9.0,
-    genre: "都市",
+    genre: "Romantis",
     episodes: 40,
   },
   {
     image: drama4,
-    title: "与凤行",
+    title: "The Legend of Shen Li",
     year: "2024",
     rating: 8.8,
-    genre: "仙侠",
+    genre: "Fantasi",
     episodes: 39,
   },
   {
     image: drama5,
-    title: "甄嬛传",
+    title: "Empresses in the Palace",
     year: "2011",
     rating: 9.4,
-    genre: "宫斗",
+    genre: "Istana",
     episodes: 76,
   },
   {
     image: drama6,
-    title: "莲花楼",
+    title: "Mysterious Lotus Casebook",
     year: "2023",
     rating: 9.1,
-    genre: "武侠",
+    genre: "Laga",
     episodes: 40,
   },
 ];
@@ -66,17 +66,17 @@ const PopularDramas = () => {
         <div className="flex items-center justify-between mb-10">
           <div>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-2">
-              <span className="text-gradient-crimson">热门</span>剧集
+              Drama <span className="text-gradient-crimson">Populer</span>
             </h2>
             <p className="text-foreground/60">
-              精选最受欢迎的华语电视剧
+              Koleksi drama China terbaik pilihan penonton
             </p>
           </div>
           <a 
             href="#" 
             className="flex items-center gap-1 text-gold hover:text-gold-light transition-colors font-medium"
           >
-            查看全部
+            Lihat Semua
             <ChevronRight className="w-5 h-5" />
           </a>
         </div>
