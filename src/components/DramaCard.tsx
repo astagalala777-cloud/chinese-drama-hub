@@ -1,23 +1,27 @@
 import { Play, Star } from "lucide-react";
+import { Drama } from "@/lib/api";
 
 interface DramaCardProps {
-  image: string;
-  title: string;
-  year: string;
-  rating: number;
-  genre: string;
-  episodes: number;
+  drama: Drama;
+  onClick?: () => void;
 }
 
-const DramaCard = ({ image, title, year, rating, genre, episodes }: DramaCardProps) => {
+const DramaCard = ({ drama, onClick }: DramaCardProps) => {
+  const { coverWap, bookName, playCount, tags, totalChapterNum } = drama;
+  const genre = tags?.[0] || "Drama";
+
   return (
-    <div className="group relative rounded-xl overflow-hidden card-hover cursor-pointer">
+    <div 
+      className="group relative rounded-xl overflow-hidden card-hover cursor-pointer"
+      onClick={onClick}
+    >
       {/* Image */}
       <div className="aspect-[2/3] relative">
         <img 
-          src={image} 
-          alt={title}
+          src={coverWap} 
+          alt={bookName}
           className="w-full h-full object-cover"
+          loading="lazy"
         />
         
         {/* Overlay on Hover */}
@@ -30,10 +34,10 @@ const DramaCard = ({ image, title, year, rating, genre, episodes }: DramaCardPro
           </div>
         </div>
         
-        {/* Rating Badge */}
+        {/* Play Count Badge */}
         <div className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 bg-background/80 backdrop-blur-sm rounded-lg">
           <Star className="w-3 h-3 text-gold fill-gold" />
-          <span className="text-xs font-medium text-foreground">{rating}</span>
+          <span className="text-xs font-medium text-foreground">{playCount}</span>
         </div>
         
         {/* Genre Tag */}
@@ -46,13 +50,11 @@ const DramaCard = ({ image, title, year, rating, genre, episodes }: DramaCardPro
       
       {/* Info */}
       <div className="absolute bottom-0 left-0 right-0 p-4">
-        <h3 className="font-display font-semibold text-lg text-foreground mb-1 group-hover:text-gold transition-colors">
-          {title}
+        <h3 className="font-display font-semibold text-lg text-foreground mb-1 group-hover:text-gold transition-colors line-clamp-2">
+          {bookName}
         </h3>
         <div className="flex items-center gap-2 text-xs text-foreground/60">
-          <span>{year}</span>
-          <span>•</span>
-          <span>{episodes} Episode</span>
+          <span>{totalChapterNum} Episode</span>
         </div>
       </div>
     </div>
