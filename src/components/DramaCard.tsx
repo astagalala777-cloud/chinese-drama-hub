@@ -1,4 +1,5 @@
 import { Play, Star } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Drama } from "@/lib/api";
 
 interface DramaCardProps {
@@ -7,13 +8,22 @@ interface DramaCardProps {
 }
 
 const DramaCard = ({ drama, onClick }: DramaCardProps) => {
-  const { coverWap, bookName, playCount, tags, totalChapterNum } = drama;
+  const navigate = useNavigate();
+  const { coverWap, bookName, playCount, tags, totalChapterNum, bookId } = drama;
   const genre = tags?.[0] || "Drama";
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    } else {
+      navigate(`/drama/${bookId}`);
+    }
+  };
 
   return (
     <div 
       className="group relative rounded-xl overflow-hidden card-hover cursor-pointer"
-      onClick={onClick}
+      onClick={handleClick}
     >
       {/* Image */}
       <div className="aspect-[2/3] relative">
